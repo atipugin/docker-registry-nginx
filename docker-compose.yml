@@ -1,0 +1,9 @@
+nginx:
+  build: .
+  ports:
+    - 5000:5000
+  links:
+    - registry:registry
+
+registry:
+  image: registry
